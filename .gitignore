@@ -1,0 +1,7 @@
+# dependencies
+node_modules
+dist
+
+# bundled outputs
+flag-icon.dev.js
+flag-icon.dev.js.map

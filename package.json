@@ -1,0 +1,40 @@
+{
+  "name": "@captaincodeman/flag-icon-element",
+  "version": "1.0.0-beta.0",
+  "description": "Custom-Element wrapper for flag-icon-css",
+  "main": "index.cjs.js",
+  "browser": "flag-icon.min.js",
+  "module": "index.js",
+  "types": "index.d.ts",
+  "unpkg": "flag-icon.min.js",
+  "scripts": {
+    "tsc": "tsc --module es2015 --declaration",
+    "bundle": "rollup -c",
+    "build": "npm run tsc && npm run bundle",
+    "dev": "rollup -c -w",
+    "web": "node browser-sync.js",
+    "test": "mocha --opts mocha.cfg",
+    "test:auto": "mocha --opts mocha.cfg --watch",
+    "mypublish": "npm run build && npm run test && cp readme.md package.json dist && npm publish dist --tag beta --access=public"
+  },
+  "author": "simon@captaincodeman.com",
+  "license": "ISC",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.4"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.4",
+    "browser-sync": "^2.24.4",
+    "chai": "^4.1.2",
+    "compression": "^1.7.2",
+    "connect-history-api-fallback": "^1.5.0",
+    "connect-logger": "0.0.1",
+    "mocha": "^5.2.0",
+    "rollup": "^0.63.5",
+    "rollup-plugin-terser": "^1.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "ts-node": "^7.0.0",
+    "typescript": "^3.0.1"
+  }
+}

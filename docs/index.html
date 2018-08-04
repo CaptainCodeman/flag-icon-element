@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Flag-Icon Element</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=1, user-scalable=yes">
+    <meta name="description" content="Flag-Icon element for country flags">
+    <style>
+      body {
+        width: 100%;
+        max-width: 640px;
+        margin: 10px auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+
+      #flags flag-icon {
+        margin: 5px;
+        font-size: 32px;
+      }
+    </style>
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.0.4/webcomponents-loader.js"></script>
+    <script src="flag-icon.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-226828-15"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-226828-15');
+    </script>
+  </head>
+  <body>
+    <h1>Flag-Icon Element</h1>
+    <p>
+      Flag-Icon Element is a custom-element version of
+      <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>.
+      It's less than 200 bytes when bundled and compressed.
+      Flag images are loaded from the cloudflare CDN by default.
+    </p>
+    <h2>How to use</h2>
+    <p>Include it in your page and set the country property. e.g.</p>
+    <pre>&lt;p&gt;Greetings from &lt;flag-icon country="ca"&gt;&lt;/flag-icon&gt;, eh!&lt;/p&gt;</pre>
+    <p>Produces:</p>
+    <p>Greetings from <flag-icon country="ca"></flag-icon>, eh!</p>
+    <h2>All the flags</h2>
+    <p id="flags"></p>
+    <script>
+      [
+'ad','ae','af','ag','ai','al','am','ao','aq','ar','as','at','au','aw','ax','az','ba','bb','bd','be','bf','bg','bh','bi','bj','bl','bm','bn','bo','bq','br','bs','bt','bv','bw','by','bz','ca','cc','cd','cf','cg','ch','ci','ck','cl','cm','cn','co','cr','cu','cv','cw','cx','cy','cz','de','dj','dk','dm','do','dz','ec','ee','eg','eh','er','es','et','fi','fj','fk','fm','fo','fr','ga','gb','gd','ge','gf','gg','gh','gi','gl','gm','gn','gp','gq','gr','gs','gt','gu','gw','gy','hk','hm','hn','hr','ht','hu','id','ie','il','im','in','io','iq','ir','is','it','je','jm','jo','jp','ke','kg','kh','ki','km','kn','kp','kr','kw','ky','kz','la','lb','lc','li','lk','lr','ls','lt','lu','lv','ly','ma','mc','md','me','mf','mg','mh','mk','ml','mm','mn','mo','mp','mq','mr','ms','mt','mu','mv','mw','mx','my','mz','na','nc','ne','nf','ng','ni','nl','no','np','nr','nu','nz','om','pa','pe','pf','pg','ph','pk','pl','pm','pn','pr','ps','pt','pw','py','qa','re','ro','rs','ru','rw','sa','sb','sc','sd','se','sg','sh','si','sj','sk','sl','sm','sn','so','sr','ss','st','sv','sx','sy','sz','tc','td','tf','tg','th','tj','tk','tl','tm','tn','to','tr','tt','tv','tw','tz','ua','ug','um','us','uy','uz','va','vc','ve','vg','vi','vn','vu','wf','ws','ye','yt','za','zm','zw','es-ct','eu','gb-eng','gb-nir','gb-sct','gb-wls','un']
+      .forEach(code => {
+        const el = document.createElement('flag-icon')
+        el.country = code
+        flags.appendChild(el)
+      })
+    </script>
+  </body>
+</html>
