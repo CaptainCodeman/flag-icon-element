@@ -15,7 +15,7 @@
     "web": "node browser-sync.js",
     "test": "mocha --opts mocha.cfg",
     "test:auto": "mocha --opts mocha.cfg --watch",
-    "mypublish": "npm run build && npm run test && cp readme.md package.json dist && npm publish dist --tag beta --access=public"
+    "mypublish": "npm run build && cp readme.md package.json dist && npm publish dist --tag beta --access=public"
   },
   "author": "simon@captaincodeman.com",
   "license": "ISC",
