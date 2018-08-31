@@ -46,21 +46,7 @@ export default commandLineArgs => {
         typescript({
           typescript: require('typescript'),
         }),
-        terser({
-          ecma: 6,
-          ie8: false,
-          safari10: true,
-          compress: {
-            passes: 2,
-            toplevel: true,
-          },
-          mangle: {
-            properties: {
-              regex: /^_/
-            },
-            toplevel: true,
-          },
-        }),
+        terser(),
       ],
     }]
   }
