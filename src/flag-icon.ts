@@ -45,9 +45,10 @@ class FlagIconElement extends HTMLElement {
   }
 
   _render() {
-    const url = `url(${this.path}/${this.squared ? '1x1' : '4x3'}/${this.country.toLowerCase()}.svg)`
-    this.style.backgroundImage = url
     this.style.width = this.squared ? '1em' : '1.33333333em'
+    this.style.backgroundImage = this.country
+      ? `url(${this.path}/${this.squared ? '1x1' : '4x3'}/${this.country.toLowerCase()}.svg)`
+      : 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7'
   }
 }
 
