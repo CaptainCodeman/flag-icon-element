@@ -34,7 +34,7 @@
     <p>
       Flag-Icon Element is a custom-element version of
       <a href="https://github.com/lipis/flag-icon-css">flag-icon-css</a>.
-      It's less than 200 bytes when bundled and compressed.
+      It's approximately 300 bytes when bundled and compressed.
       Flag images are loaded from the cloudflare CDN by default.
     </p>
     <h2>How to use</h2>
@@ -42,6 +42,9 @@
     <pre>&lt;p&gt;Greetings from &lt;flag-icon country="ca"&gt;&lt;/flag-icon&gt;, eh!&lt;/p&gt;</pre>
     <p>Produces:</p>
     <p>Greetings from <flag-icon country="ca"></flag-icon>, eh!</p>
+    <p>Default flags are 4:3 layout, set squared attribute for 1:1 and use css font-size to control the size</p>
+    <pre>&lt;flag-icon country="us" squared style="font-size: 28px"&gt;&lt;/flag-icon&gt;</pre>
+    <p><flag-icon country="ca" squared style="font-size: 64px"></flag-icon></p>
     <h2>All the flags</h2>
     <p id="flags"></p>
     <script>

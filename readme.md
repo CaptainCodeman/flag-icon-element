@@ -6,7 +6,7 @@ Custom-Element version of [flag-icon-css](https://github.com/lipis/flag-icon-css
 
 ## Benefits
 
-Less than 200 bytes when bundled and compressed.
+Approximately 300 bytes when bundled and compressed.
 Flag images are loaded from the cloudflare CDN by default.
 Shadow-Dom / WebComponent Friendly.
 
