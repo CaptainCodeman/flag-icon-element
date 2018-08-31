@@ -53,6 +53,7 @@
       .forEach(code => {
         const el = document.createElement('flag-icon')
         el.country = code
+        el.title = code.toUpperCase()
         flags.appendChild(el)
       })
     </script>
