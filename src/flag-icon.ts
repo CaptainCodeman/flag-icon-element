@@ -1,4 +1,4 @@
-class FlagIconElement extends HTMLElement {
+export class FlagIconElement extends HTMLElement {
   connectedCallback() {
     const style = this.style
     style.display = 'inline-block'
