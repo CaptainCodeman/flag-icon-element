@@ -1,1 +1,1 @@
-import './flag-icon'
+export * from './flag-icon'
