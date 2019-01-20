@@ -7,7 +7,7 @@ import { terser } from 'rollup-plugin-terser';
 export default commandLineArgs => {
   if (commandLineArgs.w || commandLineArgs.watch) {
     return {
-      input: 'src/index.ts',
+      input: 'src/flag-icon.ts',
       output: {
         file: 'flag-icon.dev.js',
         format: 'iife',
@@ -22,7 +22,7 @@ export default commandLineArgs => {
     }
   } else {
     return [{
-      input: 'src/index.ts',
+      input: 'src/flag-icon.ts',
       output: {
         file: 'dist/' + pkg.main,
         format: 'cjs',
@@ -35,7 +35,7 @@ export default commandLineArgs => {
         }),
       ],
     }, {
-      input: 'src/index.ts',
+      input: 'src/flag-icon.ts',
       output: {
         file: 'dist/' + pkg.browser,
         format: 'iife',

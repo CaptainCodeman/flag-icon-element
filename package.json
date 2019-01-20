@@ -1,11 +1,11 @@
 {
   "name": "@captaincodeman/flag-icon-element",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-beta.5",
   "description": "Custom-Element wrapper for flag-icon-css",
-  "main": "index.cjs.js",
+  "main": "flag-icon.cjs.js",
   "browser": "flag-icon.min.js",
-  "module": "index.js",
-  "types": "index.d.ts",
+  "module": "flag-icon.js",
+  "types": "flag-icon.d.ts",
   "unpkg": "flag-icon.min.js",
   "scripts": {
     "tsc": "tsc --module es2015 --declaration",
@@ -20,21 +20,22 @@
   "author": "simon@captaincodeman.com",
   "license": "ISC",
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^2.1.1"
+    "@webcomponents/webcomponentsjs": "^2.2.1"
   },
   "devDependencies": {
-    "@types/chai": "^4.1.4",
+    "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.4",
-    "browser-sync": "^2.24.7",
-    "chai": "^4.1.2",
+    "browser-sync": "^2.26.3",
+    "chai": "^4.2.0",
     "compression": "^1.7.2",
     "connect-history-api-fallback": "^1.5.0",
     "connect-logger": "0.0.1",
     "mocha": "^5.2.0",
-    "rollup": "^0.65.0",
-    "rollup-plugin-terser": "^2.0.2",
-    "rollup-plugin-typescript": "^0.8.1",
+    "rollup": "^1.0.0",
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-plugin-typescript": "^1.0.0",
     "ts-node": "^7.0.1",
-    "typescript": "^3.0.3"
+    "tslib": "^1.9.3",
+    "typescript": "^3.2.2"
   }
 }
