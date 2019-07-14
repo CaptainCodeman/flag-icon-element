@@ -1,6 +1,6 @@
 {
   "name": "@captaincodeman/flag-icon-element",
-  "version": "1.0.0-beta.5",
+  "version": "1.0.0-beta.6",
   "description": "Custom-Element wrapper for flag-icon-css",
   "main": "flag-icon.cjs.js",
   "browser": "flag-icon.min.js",
