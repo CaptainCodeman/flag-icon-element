@@ -20,7 +20,7 @@
   "author": "simon@captaincodeman.com",
   "license": "ISC",
   "dependencies": {
-    "@webcomponents/webcomponentsjs": "^2.2.1"
+    "@webcomponents/webcomponentsjs": "^2.2.10"
   },
   "devDependencies": {
     "@types/chai": "^4.1.7",
@@ -30,12 +30,13 @@
     "compression": "^1.7.4",
     "connect-history-api-fallback": "^1.6.0",
     "connect-logger": "0.0.1",
+    "lodash": ">=4.17.13",
     "mocha": "^6.1.4",
-    "rollup": "^1.15.0",
-    "rollup-plugin-terser": "^5.0.0",
+    "rollup": "^1.16.7",
+    "rollup-plugin-terser": "^5.1.1",
     "rollup-plugin-typescript": "^1.0.1",
-    "ts-node": "^8.2.0",
+    "ts-node": "^8.3.0",
     "tslib": "^1.10.0",
-    "typescript": "^3.5.1"
+    "typescript": "^3.5.3"
   }
 }
